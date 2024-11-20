@@ -1,7 +1,7 @@
 {
   "name": "myarm",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -15,7 +15,7 @@
     "react-native": "0.76.2",
     "expo-font": "~13.0.1",
     "expo-splash-screen": "~0.29.11",
-    "expo-router": "~4.0.6"
+    "expo-router": "~4.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
