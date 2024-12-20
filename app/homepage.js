@@ -36,8 +36,10 @@ export default function homepage() {
         <View style={styles.controlPanel}>
           <View style={styles.UpControl}>
             <Pressable
-              onPress={() => {
-                alert("UP");
+              onPress={async function callESP() {
+                const response = await fetch(
+                  "http://192.168.8.125:8080/myarmServer/ReciverServlet?action=up"
+                );
               }}
             >
               <Image source={upImageControl} style={styles.controlImages} />
@@ -46,8 +48,10 @@ export default function homepage() {
           <View style={styles.leftandRight}>
             <View style={styles.LeftControl}>
               <Pressable
-                onPress={() => {
-                  alert("Left");
+                onPress={async function callESP() {
+                  const response = await fetch(
+                    "http://192.168.8.125:8080/myarmServer/ReciverServlet?action=left"
+                  );
                 }}
               >
                 <Image source={LeftImageControl} style={styles.controlImages} />
@@ -55,8 +59,10 @@ export default function homepage() {
             </View>
             <View style={styles.RightControl}>
               <Pressable
-                onPress={() => {
-                  alert("right");
+                onPress={async function callESP() {
+                  const response = await fetch(
+                    "http://192.168.8.125:8080/myarmServer/ReciverServlet?action=right"
+                  );
                 }}
               >
                 <Image
@@ -68,8 +74,10 @@ export default function homepage() {
           </View>
           <View style={styles.UpControl}>
             <Pressable
-              onPress={() => {
-                alert("bottom");
+              onPress={async function callESP() {
+                const response = await fetch(
+                  "http://192.168.8.125:8080/myarmServer/ReciverServlet?action=down"
+                );
               }}
             >
               <Image source={DownImageControl} style={styles.controlImages} />

@@ -61,5 +61,5 @@ const styles = StyleSheet.create({
 
 // js
 function changeHomepage(){
-    router.push("/homepage");
+    router.push("/rangercontrol");
 }
